@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Main content */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem;
+            background-color: #f4f4f4;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to Our Church</h1>
+        <p>A place of faith, fellowship, and service</p>
+    </header>
+
+    <main class="content">
+        <section class="column">
+            <h2>Service Times</h2>
+            <p>Sundays at 9:00 AM and 11:00 AM</p>
+            <p>Wednesdays at 7:00 PM</p>
+        </section>
+
+        <section class="column">
+            <h2>Events</h2>
+            <p>Weekly Bible Study</p>
+            <p>Community Outreach</p>
+            <p>Seasonal Celebrations</p>
+        </section>
+
+        <section class="column">
+            <h2>Contact</h2>
+            <p>123 Faith Street</p>
+            <p>Anytown, ST 12345</p>
+            <p>Phone: (555) 123-4567</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Our Church. All rights reserved.</p>
+    </footer>
+</body>
+</html>
