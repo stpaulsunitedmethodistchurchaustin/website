@@ -118,6 +118,7 @@
         text-align: center;
         overflow: hidden;
         margin: 0 auto;
+        margin-bottom: 2rem;
       }
       
       .slides {
@@ -191,23 +192,32 @@
         height: 100%;
       }
       
-      .slider > a {
-        display: inline-flex;
-        width: 1.5rem;
-        height: 1.5rem;
-        background: white;
-        text-decoration: none;
-        align-items: center;
+      /* Dots navigation */
+      .slider-dots {
+        display: flex;
         justify-content: center;
-        border-radius: 50%;
-        margin: 0 0 0.5rem 0;
-        position: relative;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
       }
-      .slider > a:active {
-        top: 1px;
-      }
-      .slider > a:focus {
+      
+      .slider-dots a {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
         background: #000;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 0;
+        line-height: 0;
+      }
+      
+      .slider-dots a:hover {
+        background: #b22234;
+      }
+      
+      .slider-dots a.active {
+        background: #b22234;
       }
       
       /* Don't need button navigation */
@@ -261,11 +271,13 @@
           5
         </div>
       </div>
-      <a href="#slide-1">1</a>
-      <a href="#slide-2">2</a>
-      <a href="#slide-3">3</a>
-      <a href="#slide-4">4</a>
-      <a href="#slide-5">5</a>
+      <div class="slider-dots">
+        <a href="#slide-1" class="active">•</a>
+        <a href="#slide-2">•</a>
+        <a href="#slide-3">•</a>
+        <a href="#slide-4">•</a>
+        <a href="#slide-5">•</a>
+      </div>
     </div>
     <footer class="footer">
         <p>&copy; 2025 St. Paul's UMC.</p>
