@@ -18,13 +18,13 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background-color: #f8f5f0;
-            color: #333;
+            background-color: #b9c9db;
+            color: #2a3513;
         }
         /* Header */
         .header {
             background-color: white;
-            color: black;
+            color: #2c3714;
             text-align: center;
             padding: 2rem 1rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -44,7 +44,7 @@
             font-style: italic;
             font-family: cursive;
             margin-top: 0.5rem;
-            color: #b22234;
+            color: #ad3e3b;
             opacity: 0.9;
         }
         /* Main content */
@@ -59,12 +59,9 @@
         }
         .column {
             flex: 1;
-            flex-grow: 1;
             width: 100%;
             padding: 1.5rem;
             background-color: white;
-            border: 2px solid black;
-            border-radius: 0;
             box-shadow: 0 3px 10px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -73,17 +70,17 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         .column h2 {
-            color: #b22234;
+            color: #293612;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid #b22234;
+            border-bottom: 2px solid #293612;
         }
         address {
           font-style: normal;
         }
         /* Footer */
         .footer {
-            background-color: black;
+            background-color: #394717;
             color: white;
             text-align: center;
             padding: 1.5rem;
@@ -96,28 +93,12 @@
         .footer a:hover {
             text-decoration: underline;
         }
-        /* Mobile responsiveness */
-        @media screen and (max-width: 768px) {
-            .content {
-                flex-direction: column;
-            }
-            .header h1 {
-                font-size: 2.2rem;
-            }
-            .header p {
-                font-size: 2rem;
-            }
-            .carousel-item div {
-                height: 200px;
-                font-size: 1.2rem;
-            }
-        }
         /* Carousel image slider */
         * {
             box-sizing: border-box;
         }
         .slider {
-            width: 300px;
+            width: 830px;
             text-align: center;
             overflow: hidden;
             margin: 0 auto;
@@ -144,8 +125,8 @@
         .slides > div {
             scroll-snap-align: start;
             flex-shrink: 0;
-            width: 300px;
-            height: 300px;
+            width: 830px;
+            height: 467px;
             margin-right: 50px;
             border-radius: 10px;
             background: #eee;
@@ -217,6 +198,25 @@
                 display: none;
             }
         }
+        /* Mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            .header p {
+                font-size: 2rem;
+            }
+            .slides > div {
+              width: 100vw;
+              height: 56vh;
+            }
+            .slider {
+              width: 100vw;
+            }
+        }
     </style>
 </head>
 <body>
@@ -244,27 +244,15 @@
     <div class="slider">
       <div class="slides">
         <div id="slide-1">
-          1
+          <img src="stpauls_ext.jpeg" />
         </div>
         <div id="slide-2">
-          2
-        </div>
-        <div id="slide-3">
-          3
-        </div>
-        <div id="slide-4">
-          4
-        </div>
-        <div id="slide-5">
-          5
+          <img src="stpauls_road.jpeg" />
         </div>
       </div>
       <div class="slider-dots">
         <a href="#slide-1" class="active">•</a>
         <a href="#slide-2">•</a>
-        <a href="#slide-3">•</a>
-        <a href="#slide-4">•</a>
-        <a href="#slide-5">•</a>
       </div>
     </div>
     <footer class="footer">
