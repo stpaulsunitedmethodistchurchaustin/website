@@ -32,12 +32,27 @@
             border-bottom: 2px solid black;
             border-left: none;
             border-right: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
         }
         .header h1 {
             font-size: 2.8rem;
             margin-bottom: 0.5rem;
             font-weight: 700;
             color: black;
+            margin: 0;
+            flex: 1;
+            text-align: center;
+        }
+        .header .logo {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 85%;
+            width: auto;
         }
         .header p {
             font-size: 2.2rem;
@@ -222,6 +237,7 @@
 </head>
 <body>
     <header class="header">
+        <img src="umc_logo.svg" alt="UMC Logo" class="logo" />
         <h1>St. Paul's United Methodist Church</h1>
         <p>The little church with a big heart</p>
     </header>
